@@ -15,9 +15,11 @@
     <title>top vakantie planning</title>
 </head>
 <style>
-    body, html {
+    body,
+    html {
         margin: 0;
     }
+
     table,
     th,
     td {
@@ -37,7 +39,7 @@
 
     header {
         background-color: #666;
-        padding: 20px;
+        padding: 20px 0;
         max-width: 100%;
         text-align: center;
         font-size: 35px;
@@ -62,102 +64,99 @@
 </style>
 
 
-<div class="a">
 
-    <body>
-        <header>
-            <h1>vakantie planner.</h1>
-            <h4>het is nu: <span id="demo"></span></h4>
-            <h4>moment:<span id="activiteit"></span></h4>
-            <h4>van tot:<span id="startminuten"></span>-<span id="eindminuten"></span></h4>
-        </header>
-
+<body>
+    <header>
+        <h1>vakantie planner.</h1>
+        <h4>het is nu: <span id="demo"></span></h4>
+        <h4>moment:<span id="activiteit"></span></h4>
+        <h4>van tot:<span id="startminuten"></span>-<span id="eindminuten"></span></h4>
+    </header>
 
 
-        <nav>
-            <div class="flex-container">
-                <table id="schedule" ,style="width:30%">
-                    <th>uur</th>
-                    <th>wat te doen</th>
 
-                    <tr>
-                        <td>7u45</td>
-                        <td>niet vroeger douchen</td>
-                    </tr>
-                    <tr>
-                        <td>8u15</td>
-                        <td>wekken</td>
-                    </tr>
-                    <tr>
-                        <td>8u30</td>
-                        <td>eten</td>
-                    </tr>
-                    <tr>
-                        <td>9u15</td>
-                        <td>verzamelen arena - lesmoment 1</td>
-                    </tr>
-                    <tr>
-                        <td>10u45</td>
-                        <td>pauze bar</td>
-                    </tr>
-                    <tr>
-                        <td>11u05</td>
-                        <td>lesmoment 2</td>
-                    </tr>
-                    <tr>
-                        <td>12u30</td>
-                        <td>middageten en vrij</td>
-                    </tr>
-                    <tr>
-                        <td>13u45</td>
-                        <td>verzamelen arena - lesmoment 3</td>
-                    </tr>
-                    <tr>
-                        <td>15u15</td>
-                        <td>pauzen - verzamelen</td>
-                    </tr>
-                    <tr>
-                        <td>15u20</td>
-                        <td>verzamelen bronne - start namiiddagactiviteiten</td>
-                    </tr>
-                    <tr>
-                        <td>17u45</td>
-                        <td>vrij</td>
-                    </tr>
-                    <tr>
-                        <td>18u30</td>
-                        <td>avondeten - vrij</td>
-                    </tr>
-                    <tr>
-                        <td>19u30</td>
-                        <td>verzamelen arena - start avondactiviteiten</td>
-                    </tr>
-                    <tr>
-                        <td>21u30</td>
-                        <td>vrij - bar</td>
-                    </tr>
-                    <tr>
-                        <td>22u00</td>
-                        <td>niet meer douchen</td>
-                    </tr>
-                    <tr>
-                        <td>22u00</td>
-                        <td>slapen gaan 1e graad blauw bandje</td>
-                    </tr>
-                    <tr>
-                        <td>22u30</td>
-                        <td>slapen gaan 2e graad groen bandje</td>
-                    </tr>
-                    <tr>
-                        <td>22u45</td>
-                        <td>slapen gaan 3e graad rood bandje</td>
-                    </tr>
-            </div>
-        </nav>
+    <nav>
+        <div class="flex-container">
+            <table id="schedule" ,style="width:30%">
+                <th>uur</th>
+                <th>wat te doen</th>
 
-    </body>
+                <tr>
+                    <td>7u45</td>
+                    <td>niet vroeger douchen</td>
+                </tr>
+                <tr>
+                    <td>8u15</td>
+                    <td>wekken</td>
+                </tr>
+                <tr>
+                    <td>8u30</td>
+                    <td>eten</td>
+                </tr>
+                <tr>
+                    <td>9u15</td>
+                    <td>verzamelen arena - lesmoment 1</td>
+                </tr>
+                <tr>
+                    <td>10u45</td>
+                    <td>pauze bar</td>
+                </tr>
+                <tr>
+                    <td>11u05</td>
+                    <td>lesmoment 2</td>
+                </tr>
+                <tr>
+                    <td>12u30</td>
+                    <td>middageten en vrij</td>
+                </tr>
+                <tr>
+                    <td>13u45</td>
+                    <td>verzamelen arena - lesmoment 3</td>
+                </tr>
+                <tr>
+                    <td>15u15</td>
+                    <td>pauzen - verzamelen</td>
+                </tr>
+                <tr>
+                    <td>15u20</td>
+                    <td>verzamelen bronne - start namiiddagactiviteiten</td>
+                </tr>
+                <tr>
+                    <td>17u45</td>
+                    <td>vrij</td>
+                </tr>
+                <tr>
+                    <td>18u30</td>
+                    <td>avondeten - vrij</td>
+                </tr>
+                <tr>
+                    <td>19u30</td>
+                    <td>verzamelen arena - start avondactiviteiten</td>
+                </tr>
+                <tr>
+                    <td>21u30</td>
+                    <td>vrij - bar</td>
+                </tr>
+                <tr>
+                    <td>22u00</td>
+                    <td>niet meer douchen</td>
+                </tr>
+                <tr>
+                    <td>22u00</td>
+                    <td>slapen gaan 1e graad blauw bandje</td>
+                </tr>
+                <tr>
+                    <td>22u30</td>
+                    <td>slapen gaan 2e graad groen bandje</td>
+                </tr>
+                <tr>
+                    <td>22u45</td>
+                    <td>slapen gaan 3e graad rood bandje</td>
+                </tr>
+        </div>
+    </nav>
 
-</div>
+</body>
 
 
 
