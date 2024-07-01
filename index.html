@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<link rel="manifest" href="./manifest.json">
+
 <style>
     div.a {
         text-align: center;
@@ -57,7 +59,7 @@
             <h1>vakantie planner.</h1>
             <h4>het is nu: <span id="demo"></span></h4>
             <h4>moment:<span id="activiteit"></span></h4>
-            <h4>van tot:<span id="startminuten"></span>-<span id ="eindminuten"></span></h4>
+            <h4>van tot:<span id="startminuten"></span>-<span id="eindminuten"></span></h4>
         </header>
 
 
@@ -156,9 +158,9 @@
         const d = new Date();
         let text = d.toLocaleTimeString();
 
-        const huidigeMinuten= d.getMinutes() + d.getHours()* 60;
+        const huidigeMinuten = d.getMinutes() + d.getHours() * 60;
 
-        for (let index = 0; index < betterschedule.length; index +=1) {
+        for (let index = 0; index < betterschedule.length; index += 1) {
             //als huidige minuten <= eind minuten van element en >= start minuten van element ==> das de huidige activiteit
             const huidigElement = betterschedule[index];
             if (huidigeMinuten <= huidigElement.eindMinuten && huidigElement.startMinuten <= huidigeMinuten) {
@@ -169,7 +171,7 @@
             }
         }
 
-    
+
         document.getElementById("demo").innerHTML = text;
     }, 100);
 
@@ -202,11 +204,11 @@
 <script>
     let betterschedule = [];
 
-    for (let index = 0 ; index < schedule.length; index+=1){
+    for (let index = 0; index < schedule.length; index += 1) {
         const huidigElement = schedule[index];
 
         const uurEnMinuten = huidigElement.time.split(':').map(Number);
-        
+
 
         const uur = uurEnMinuten[0] //22
         const minuten = uurEnMinuten[1]// 0 
@@ -225,19 +227,31 @@
 
         const eindminuten = volgendElement.time
         const eindtijd = volgendestartminuten
-        const beteritem= {
+        const beteritem = {
             startTijd: huidigElement.time,
             startMinuten: startminuten,
             eindMinuten: eindtijd,
             activity: huidigElement.activity,
-            eindTijd:volgendElement.time 
+            eindTijd: volgendElement.time
 
         }
 
         betterschedule.push(beteritem);
-   }
+    }
 
-   console.log(betterschedule);
+    console.log(betterschedule);
+</script>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js')
+            .then(registration => {
+                console.log('Excellent, registered with scope:', registration.scope);
+            })
+            .catch(error => {
+                console.error('Service worker registration failed:', error);
+            });
+    }
 </script>
 
 </html>
