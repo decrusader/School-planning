@@ -1,0 +1,18 @@
+{
+    "name": "topvakantie planner",
+    "short_name": "planner",
+    "description": "planner van topvakantie",
+    "scope": "./",
+    "start_url": "./",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "display": "fullscreen",
+    "display_override": ["standalone"],
+    "icons": [
+        {
+            "src": "./images/pacman.jpg",
+            "type": "image/jpeg",
+            "sizes": "700x700"
+        }   
+    ]
+}
