@@ -22,17 +22,17 @@ setInterval(function () {
 }, 100);
 
 const schedule = [
-    { time: '8:30', activity: 'Wiskunde' },
-    { time: '9:20', activity: 'Wiskunde' },
+    { time: '8:30', activity: 'Wetenschappen' },
+    { time: '9:20', activity: 'Wetenschappen' },
     { time: '10:10', activity: 'Speeltijd' },
-    { time: '10:25', activity: 'Frans' },
-    { time: '11:15', activity: 'Elektriciteit en elektronica' },
+    { time: '10:25', activity: 'Nederlands' },
+    { time: '11:15', activity: 'Biologie' },
     { time: '12:05', activity: 'Middagpauze' },
-    { time: '13:10', activity: 'Engineering labo' },
-    { time: '14:00', activity: 'Engineering labo' },
+    { time: '13:10', activity: 'Wiskunde' },
+    { time: '14:00', activity: 'Wiskunde' },
     { time: '14:50', activity: 'Speeltijd' },
     { time: '15:05', activity: 'Frans' },
-    { time: '15:55', activity: 'Wetenschappen' },
+    { time: '15:55', activity: 'vrij' },
     { time: '16:45', activity: 'vrij' },
 ]
 
