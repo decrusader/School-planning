@@ -10,7 +10,6 @@
     table,
     th,
     td {
-        width: 60%;
         border: 1px solid black;
     }
 
@@ -47,5 +46,5 @@
 
     table {
         border-collapse: collapse;
-        width: 80%;
+        width: 60%;
     }
