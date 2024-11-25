@@ -35,43 +35,42 @@ const zaterdag = [
 const zondag = zaterdag;
 
 const maandag = [
-    { time: '8:30', activity: 'Wakker worden' },
-    { time: '9:20', activity: 'Wetenschappen' },
+    { time: '8:30', activity: 'Wiskunde' },
+    { time: '9:20', activity: 'Wiskunde' },
     { time: '10:10', activity: 'Speeltijd' },
-    { time: '10:25', activity: 'Nederlands' },
-    { time: '11:15', activity: 'Biologie' },
+    { time: '10:25', activity: 'Frans' },
+    { time: '11:15', activity: 'Elektriciteit' },
     { time: '12:05', activity: 'Middagpauze' },
-    { time: '13:10', activity: 'Wiskunde' },
-    { time: '14:00', activity: 'Wiskunde' },
+    { time: '13:10', activity: 'Engineering Labo' },
+    { time: '14:00', activity: 'Engineering Labo' },
     { time: '14:50', activity: 'Speeltijd' },
     { time: '15:05', activity: 'Frans' },
-    { time: '15:55', activity: 'vrij' },
+    { time: '15:55', activity: 'Wetenschappen' },
     { time: '16:45', activity: 'vrij' }
 ]
 
 const dinsdag = [
-    { time: '8:30', activity: 'Wetenschappen' },
-    { time: '9:20', activity: 'Wetenschappen' },
+    { time: '8:30', activity: 'Nederlands' },
+    { time: '9:20', activity: 'Godsdienst' },
     { time: '10:10', activity: 'Speeltijd' },
-    { time: '10:25', activity: 'Nederlands' },
-    { time: '11:15', activity: 'Biologie' },
+    { time: '10:25', activity: 'L.O.' },
+    { time: '11:15', activity: 'L.O.' },
     { time: '12:05', activity: 'Middagpauze' },
     { time: '13:10', activity: 'Wiskunde' },
     { time: '14:00', activity: 'Wiskunde' },
     { time: '14:50', activity: 'Speeltijd' },
-    { time: '15:05', activity: 'Frans' },
-    { time: '15:55', activity: 'vrij' },
+    { time: '15:05', activity: 'Engels' },
+    { time: '15:55', activity: 'Engels' },
     { time: '16:45', activity: 'vrij' }
 ]
 
 const woensdag = [
-    { time: '8:30', activity: 'Wetenschappen' },
-    { time: '9:20', activity: 'Wetenschappen' },
+    { time: '8:30', activity: 'Nederlands' },
+    { time: '9:20', activity: 'Nederlands' },
     { time: '10:10', activity: 'Speeltijd' },
-    { time: '10:25', activity: 'Nederlands' },
-    { time: '11:15', activity: 'Biologie' },
-    { time: '12:05', activity: 'vrij' },
-    { time: '16:45', activity: 'vrij' }
+    { time: '10:25', activity: 'Elektriciteit' },
+    { time: '11:15', activity: 'Elektriciteit' },
+    { time: '12:05', activity: 'vrij' }
 ]
 
 const donderdag = [
@@ -85,23 +84,21 @@ const donderdag = [
     { time: '14:00', activity: 'Wiskunde' },
     { time: '14:50', activity: 'Speeltijd' },
     { time: '15:05', activity: 'Frans' },
-    { time: '15:55', activity: 'vrij' },
-    { time: '16:45', activity: 'vrij' }
+    { time: '15:55', activity: 'vrij' }
 ]
 
 const vrijdag = [
-    { time: '8:30', activity: 'Wetenschappen' },
-    { time: '9:20', activity: 'Wetenschappen' },
+    { time: '8:30', activity: 'Engineering Labo' },
+    { time: '9:20', activity: 'Engineering Labo' },
     { time: '10:10', activity: 'Speeltijd' },
-    { time: '10:25', activity: 'Nederlands' },
-    { time: '11:15', activity: 'Biologie' },
+    { time: '10:25', activity: 'Aardrijkskunde' },
+    { time: '11:15', activity: 'Godsdienst' },
     { time: '12:05', activity: 'Middagpauze' },
-    { time: '13:10', activity: 'Wiskunde' },
-    { time: '14:00', activity: 'Wiskunde' },
+    { time: '13:10', activity: 'Mechanica' },
+    { time: '14:00', activity: 'Mechanica' },
     { time: '14:50', activity: 'Speeltijd' },
-    { time: '15:05', activity: 'Frans' },
-    { time: '15:55', activity: 'vrij' },
-    { time: '16:45', activity: 'vrij' }
+    { time: '15:05', activity: 'Geschiedenis' },
+    { time: '15:55', activity: 'vrij' }
 ]
 
 const weekschedule = [zondag, maandag, dinsdag, woensdag, donderdag, vrijdag, zaterdag]
